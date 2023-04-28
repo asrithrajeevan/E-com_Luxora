@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="container w-100">
+
+    <div class="row align-items-center p-2 w-100">
+
+        <div class="col bg-wight">
+            <a href=#>
+            <img src="/static/images/b_grocery.jpg" width="60px" height="60px" alt="phone"><br><b>Grocery</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            <a href=#>
+            <img src="/static/images/b_phone.jpg" width="60px" height="60px" alt="phone"><br><b>Mobiles</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            <a href=#>
+            <img src="/static/images/b_fashion.jpg" width="60px" height="60px" alt="phone"><br><b>Fashion</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            &nbsp;<a href=#>
+            <img src="/static/images/b_electronics.jpg" width="60px" height="60px" alt="phone"><br><b>Electronics</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            <a href=#>
+            <img src="/static/images/b_home.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;&nbsp;Home</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            &nbsp;<a href=#>
+            <img src="/static/images/b_appliences.jpg" width="60px" height="60px" alt="phone"><br><b>Appliences</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            <a href=#>
+            <img src="/static/images/b_trawel.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;Trawel</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            <a href=#>
+            <img src="/static/images/b_offers.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;Offers</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            <a href=#>
+            <img src="/static/images/b_toys.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;&nbsp;Toys</b></a>
+        </div>
+
+        <div class="col bg-wight">
+            <a href=#>
+            <img src="/static/images/b_bike.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;&nbsp;Bike</b></a>
+        </div>
+            
+    </div>
+</div>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <!-- to serve the photo into home page ,add the photo below image src file,  there are three photos -->
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static '/images/slider1.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+      
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static '/images/slider2.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static '/images/slider3.jpg'%}" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div><br>
+
+
+<div class="container w-100 p-4 bg-light">
+
+    <div class="container w-100 p-4 bg-light">
+
+        {% for dict in items %}
+        <div class="card text-center" style="width:15rem; display: inline-block;">
+            <div class="container p-4">
+                <img class="card-img-top center p-2 w-75" src="{{dict.item_image.url}}" width="100px" height="200px" alt="Card image">
+            </div>
+            <div class="card-body">
+            <h4 class="card-title"><b>{{dict.item_name}}</b></h4>
+            <p class="card-text">{{dict.item_rate}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+</div>
+
+{% endblock %}

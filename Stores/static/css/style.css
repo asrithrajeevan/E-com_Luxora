@@ -1,0 +1,83 @@
+body {
+    color: rgb(193, 190, 190);
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+nav ul li {
+    float: right;
+    }
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+nav ul li a:hover {
+    background-color: #11b0be;
+    border-radius: 10px;
+    border: 1px solid hwb(206 4% 0%)
+    }
+
+nav form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    }
+
+nav input[type="text"] {
+    padding: 5px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    }
+  
+nav button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #08aadb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    }
+  
+nav button[type="submit"]:hover {
+    background-color: #0094de;
+    }
+  
+.item {
+    width: 1000px;
+    padding: 50px;
+    margin-left: 10px
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(7, 35, 134);
+}
+
+.block {
+    background-color: aqua;
+}
+
+.item {
+    width: 100px;
+}
