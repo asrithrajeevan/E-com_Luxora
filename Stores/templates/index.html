@@ -14,52 +14,52 @@ Home
 
         <div class="col bg-wight">
             <a href=#>
-            <img src="/static/images/b_grocery.jpg" width="60px" height="60px" alt="phone"><br><b>Grocery</b></a>
+            <img src="/static/images/b_grocery.jpg" width="60px" height="60px" alt="Grocery"><br><b>Grocery</b></a>
         </div>
 
         <div class="col bg-wight">
             <a href=#>
-            <img src="/static/images/b_phone.jpg" width="60px" height="60px" alt="phone"><br><b>Mobiles</b></a>
+            <img src="/static/images/b_phone.jpg" width="60px" height="60px" alt="Mobiles"><br><b>Mobiles</b></a>
         </div>
 
         <div class="col bg-wight">
             <a href=#>
-            <img src="/static/images/b_fashion.jpg" width="60px" height="60px" alt="phone"><br><b>Fashion</b></a>
+            <img src="/static/images/b_fashion.jpg" width="60px" height="60px" alt="Fashion"><br><b>Fashion</b></a>
         </div>
 
         <div class="col bg-wight">
             &nbsp;<a href=#>
-            <img src="/static/images/b_electronics.jpg" width="60px" height="60px" alt="phone"><br><b>Electronics</b></a>
+            <img src="/static/images/b_electronics.jpg" width="60px" height="60px" alt="Electronics"><br><b>Electronics</b></a>
         </div>
 
         <div class="col bg-wight">
             <a href=#>
-            <img src="/static/images/b_home.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;&nbsp;Home</b></a>
+            <img src="/static/images/b_home.jpg" width="60px" height="60px" alt="Home"><br><b>&nbsp;&nbsp;&nbsp;Home</b></a>
         </div>
 
         <div class="col bg-wight">
             &nbsp;<a href=#>
-            <img src="/static/images/b_appliences.jpg" width="60px" height="60px" alt="phone"><br><b>Appliences</b></a>
+            <img src="/static/images/b_appliences.jpg" width="60px" height="60px" alt="Appliences"><br><b>Appliences</b></a>
         </div>
 
         <div class="col bg-wight">
             <a href=#>
-            <img src="/static/images/b_trawel.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;Trawel</b></a>
+            <img src="/static/images/b_trawel.jpg" width="60px" height="60px" alt="Trawel"><br><b>&nbsp;&nbsp;Trawel</b></a>
         </div>
 
         <div class="col bg-wight">
             <a href=#>
-            <img src="/static/images/b_offers.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;Offers</b></a>
+            <img src="/static/images/b_offers.jpg" width="60px" height="60px" alt="Offers"><br><b>&nbsp;&nbsp;Offers</b></a>
         </div>
 
         <div class="col bg-wight">
             <a href=#>
-            <img src="/static/images/b_toys.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;&nbsp;Toys</b></a>
+            <img src="/static/images/b_toys.jpg" width="60px" height="60px" alt="Toys"><br><b>&nbsp;&nbsp;&nbsp;Toys</b></a>
         </div>
 
         <div class="col bg-wight">
             <a href=#>
-            <img src="/static/images/b_bike.jpg" width="60px" height="60px" alt="phone"><br><b>&nbsp;&nbsp;&nbsp;Bike</b></a>
+            <img src="/static/images/b_bike.jpg" width="60px" height="60px" alt="Bike"><br><b>&nbsp;&nbsp;&nbsp;Bike</b></a>
         </div>
             
     </div>
@@ -106,11 +106,11 @@ Home
         {% for dict in items %}
         <div class="card text-center" style="width:15rem; display: inline-block;">
             <div class="container p-4">
-                <img class="card-img-top center p-2 w-75" src="{{dict.item_image.url}}" width="100px" height="200px" alt="Card image">
+                <a href=#><img class="zoom-img card-img-top center p-2 w-75" src="{{dict.item_image.url}}" width="100px" height="200px" alt="Card image">
             </div>
             <div class="card-body">
             <h4 class="card-title"><b>{{dict.item_name}}</b></h4>
-            <p class="card-text">{{dict.item_rate}}</p>
+            <p class="card-text">{{dict.item_rate}}</p></a>
             </div>
         </div>
         {% endfor %}
